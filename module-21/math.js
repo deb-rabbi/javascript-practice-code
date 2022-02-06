@@ -1,12 +1,12 @@
-// plus ba mainais jai thakok output plus ai hobe
+plus ba mainais jai thakok output plus ai hobe
 
-// Math.abs
+Math.abs
 
-// var a = -3.83;
-// var b = Math.abs(a);
-// console.log(b);
+var a = -3.83;
+var b = Math.abs(a);
+console.log(b);
 
-// Math.ceil / Math.floor
+Math.ceil / Math.floor
 
 const number = 7.50000;
 const output = Math.ceil(number);
