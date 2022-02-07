@@ -34,3 +34,20 @@ function fibonacciNumber (fibo){
 }
 const totalfibonacci = fibonacciNumber(9);
 console.log(typeof totalfibonacci);
+
+
+
+
+
+
+
+// var oddFriends = '';
+// for (let i = 0 ; i <= oddFriend.length; i++){
+//    var element = oddFriend[i];
+//    if ( element.length % 2 == 1){
+//       oddFriends = element;
+//       break;
+//    }
+  
+// }
+// console.log(oddFriends);
