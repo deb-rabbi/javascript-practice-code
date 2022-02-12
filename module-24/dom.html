@@ -9,7 +9,7 @@
 <body>
    <header>
       <h1>here is my blog</h1>
-      <section>
+      <section id="blog">
          <article>
             <h3>my awasome blog-1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum illo sint ratione blanditiis. Maxime beatae quo minus? Amet earum praesentium adipisci ipsa ad eos ipsum sequi fuga magni rem!</p>
@@ -49,15 +49,15 @@
       kgf.style.color = 'green';
 
 
-      const lernId2 = document.getElementById('kfg2');
-      kgf2.style.color ='orange';
-      kgf2.style.textAlign ='center';
-      kgf2.style.backgroundColor ='aqua';
-      kgf2.style.marginTop ='30px';
-      kgf2.style.marginLeft ='50px';
-      kgf2.style.paddingLeft ='20px';
-      kgf2.style.border ='3px solid blue';
-      kgf2.style.borderRadius ='25px';
+      // const lernId2 = document.getElementById('kfg2');
+      // kgf2.style.color ='orange';
+      // kgf2.style.textAlign ='center';
+      // kgf2.style.backgroundColor ='aqua';
+      // kgf2.style.marginTop ='30px';
+      // kgf2.style.marginLeft ='50px';
+      // kgf2.style.paddingLeft ='20px';
+      // kgf2.style.border ='3px solid blue';
+      // kgf2.style.borderRadius ='25px';
 
       //querySelector / querySelectorAll
 
@@ -66,6 +66,69 @@
 
       const sselector = document.querySelectorAll('p');
       console.log(sselector);
+
+      const getMamu = document.getElementById('kgf');
+      console.log(getMamu);
+      console.log(getMamu.getAttribute('style'));
+      console.log(getMamu.getAttribute('id'));
+      console.log(getMamu.getAttribute('class'));
+
+      // set any attribute
+
+      const setMamu = document.getElementById('kgf2');
+      setMamu.setAttribute('title', 'this is mirza bhai')
+      setMamu.setAttribute('class', 'khaki')
+      console.log(setMamu)
+      console.log(setMamu.getAttribute('class'))
+      console.log(setMamu.getAttribute('title'))
+
+      //parentNode
+
+      console.log(setMamu.parentNode);
+      console.log(setMamu.parentNode.parentNode);
+      console.log(setMamu.parentNode.parentNode.parentNode);
+      console.log(setMamu.parentNode.parentNode.parentNode.parentNode);
+      console.log(setMamu.parentNode.parentNode.parentNode.parentNode.parentNode);
+      console.log(setMamu.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
+      console.log(setMamu.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
+
+      // childNodes
+
+      console.log(setMamu.childNodes)
+
+      //create an element by js
+
+
+      const h2 = document.createElement('h5');
+      h2.innerText = 'This is Mirza';
+      const addh2 = document.getElementById('kgf');
+      addh2.appendChild(h2)
+
+
+
+
+
+
+
+      const artcl = document.createElement('article');
+
+      const hTag = document.createElement('h3');
+      hTag.innerText='my awasome blog-5'
+
+      const pTag = document.createElement('p');
+      pTag.innerText='incidunt voluptas iusto laboriosam sint architecto magnam. Eum sapiente natus tempora nesciunt atque assumenda officia quis? Perferendis ut mollitia illum blanditiis doloremque tenetur quisquam minima laudantium.';
+
+      artcl.appendChild(hTag);
+      artcl.appendChild(pTag);
+
+      const add = document.getElementById('blog')
+      add.appendChild(artcl)
+
+
+
+
+
+
    </script>
 </body>
 </html>
