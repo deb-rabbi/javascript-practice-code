@@ -15,21 +15,57 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum illo sint ratione blanditiis. Maxime beatae quo minus? Amet earum praesentium adipisci ipsa ad eos ipsum sequi fuga magni rem!</p>
          </article>
          <article>
-            <h3>my awasome blog-2</h3>
+            <h3 id="kgf2">my awasome blog-2</h3>
             <p>Totam dolores dolor rem, repellat cupiditate neque corporis repellendus, optio exercitationem quod voluptates modi dolorem iste velit officiis ullam! Exercitationem ipsa nobis, culpa rem debitis nisi hic perspiciatis cumque error.</p>
          </article>
          <article>
-            <h3>my awasome blog-3</h3>
+            <h3 style="color: ;">my awasome blog-3</h3>
             <p>Rerum qui cupiditate enim, incidunt voluptas iusto laboriosam sint architecto magnam. Eum sapiente natus tempora nesciunt atque assumenda officia quis? Perferendis ut mollitia illum blanditiis doloremque tenetur quisquam minima laudantium.</p>
          </article>
          <article>
-            <h3>my awasome blog-4</h3>
+            <h3 id="kgf" class="kaku">my awasome blog-4</h3>
             <p>Rerum qui cupiditate enim, incidunt voluptas iusto laboriosam sint architecto magnam. Eum sapiente natus tempora nesciunt atque assumenda officia quis? Perferendis ut mollitia illum blanditiis doloremque tenetur quisquam minima laudantium.</p>
          </article>
       </section>
    </header>
    <script>
-      console.log(document);
+      // console.log(document);
+      // const bbr = document.getElementsByTagName('h3');
+      // // console.log(bbr);
+      // for (const h3 of bbr)
+      // // console.log(h3);
+
+      // var pInfo = document.getElementsByTagName('p');
+      // console.log(pInfo);
+      // for( const pInner of pInfo)
+      // console.log(pInner);
+
+
+      //getElementById
+
+      const lernId = document.getElementById('kgf');
+      // console.log(kgf);
+      kgf.style.textAlign = 'center';
+      kgf.style.color = 'green';
+
+
+      const lernId2 = document.getElementById('kfg2');
+      kgf2.style.color ='orange';
+      kgf2.style.textAlign ='center';
+      kgf2.style.backgroundColor ='aqua';
+      kgf2.style.marginTop ='30px';
+      kgf2.style.marginLeft ='50px';
+      kgf2.style.paddingLeft ='20px';
+      kgf2.style.border ='3px solid blue';
+      kgf2.style.borderRadius ='25px';
+
+      //querySelector / querySelectorAll
+
+      const selector = document.querySelector('p');
+      selector.style.color= 'coral';
+
+      const sselector = document.querySelectorAll('p');
+      console.log(sselector);
    </script>
 </body>
 </html>
