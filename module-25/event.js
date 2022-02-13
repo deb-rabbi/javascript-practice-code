@@ -11,6 +11,18 @@ function makeMeBlue(){
    document.body.style.backgroundColor = 'blue';
 }
 
+// it's for 4.button id with onclick handler more simple way
+const greenBtn = document.getElementById('make-green');
+      //  console.log(greenBtn);
+      greenBtn.onclick = function makeGreen (){
+         document.body.style.backgroundColor = 'green';
+      }
 
+ //it's for 5. event on addEventListener handler
+const slateBlueBtn = document.getElementById ('make-SlateBlue');
+slateBlueBtn.addEventListener('click', makeSlateBlue);
 
+function makeSlateBlue (){
+   document.body.style.backgroundColor= 'SlateBlue';
+}
 

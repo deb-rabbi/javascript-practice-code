@@ -16,16 +16,53 @@
    <!-- <button onclick="console.log(7)">click me </button> -->
    
 
-   <!-- 1. onclick handler -->
+   <!-- 1. event on  onclick handler -->
    <button onclick=" document.body.style.backgroundColor = 'yellow' ">click me yellow </button>
    
-   <!-- 2. onclick handler -->
+   <!-- 2. event on onclick handler -->
    <button onclick="makeRed()">click me red </button>
    
-   <!-- 3. id with onclick handler -->
-   <button id="make-blue">click me red </button>
+   <!-- 3. event on id with onclick handler -->
+   <button id="make-blue">click me blue </button>
+   
+   <!-- 4. event on id with onclick handler -->
+   <button id="make-green">click me green </button>
+   
+   <!-- 5. event on addEventListener handler -->
+   <button id="make-SlateBlue">click me SlateBlue </button>
+   
+   <!-- 6. event on addEventListener handler one more way -->
+   <button id="make-HotPink">click me HotPink </button>
+   
+   <!-- 7. event on addEventListener handler more simple way -->
+   <button id="make-Lime">click me Lime </button>
+   
    <script>
+      //  const slateBlueBtn = document.getElementById ('make-SlateBlue');
+      //  slateBlueBtn.addEventListener('click', makeSlateBlue)
+      
+      // function makeSlateBlue (){
+         //    document.body.style.backgroundColor= 'SlateBlue';
+         // }
+         
+         // ........(6)..........
+         
+         const HotPinkBtn = document.getElementById ('make-HotPink');
+         HotPinkBtn.addEventListener('click', function () {
+            document.body.style.backgroundColor= 'HotPink';
+            
+         })
+         
+         // ........(7)..........
+         document.getElementById ('make-Lime').addEventListener('click', function(){
+            document.body.style.backgroundColor= 'Lime';
 
+         })
+         
+         
+         
+
+      
    </script>
    <script src="event.js"></script>
 </body>

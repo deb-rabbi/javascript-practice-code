@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>most useable event</title>
+</head>
+<body>
+   <p id="clicking-methode"></p>
+   <input type="text" name="" id="set-text" placeholder="input the update text">
+   <button id="update-text">update</button>
+   <button onclick="fillTheGapByOnclick()"> fill the gap by onclick</button>
+
+   <button id="direct-event">fill the gap by addEventListener directly</button>
+   <script>
+      // with function
+      function fillTheGapByOnclick (){
+         const p = document.getElementById('clicking-methode');
+         p.innerText = 'wow! mirza bhai you are awosome '
+      }
+      // with direct 
+      document.getElementById('direct-event').addEventListener('click', function (){
+         const text = document.getElementById('clicking-methode');
+         text.innerText = 'wow! mirza bhai direct addEventListener diye koro '
+
+      })
+
+      // direct with input field 
+
+      document.getElementById('update-text').addEventListener('click', function(){
+         const inputText = document.getElementById('set-text')
+         const p = document.getElementById('clicking-methode');
+         p.innerText = inputText.value;
+      })
+   </script>
+</body>
+</html>
