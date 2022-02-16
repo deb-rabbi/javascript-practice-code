@@ -13,4 +13,8 @@ document.getElementById('login-submit').addEventListener('click', function(){
       // console.log('this is mirza bhai');
       window.location.href ="link-pager.html"
    }
+   else{
+      console.log('you set the wrong pass or usermail');
+      
+   }
 })
