@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h2> event delegaton</h2>
+   <section id="section-container">
+      <ul id="list-container">
+         <li class="item">tumi je kar</li>
+         <li id="second-item" class="item">ami too tumar ai </li>
+         <li class="item">tumi ki amr </li>
+         <li class="item"> hmm ami o tumar</li>
+      </ul>
+      <button id="add-item">add item</button>
+   </section>
+   <script>
+      // const items = document.getElementsByClassName('item');
+      // for (const delet of items){
+      //    delet.addEventListener('click', function(eventt){
+      //       // console.log('delete the item');
+      //       // document.getElementById('list-container').removeChild(delet);
+      //       eventt.target.parentNode.removeChild(delet);
+
+      //    })
+      // }
+
+      document.getElementById('add-item').addEventListener('click', function(){
+         const li = document.createElement('li');
+         li.innerText= ' ore amr sundori re !'
+         li.classList.add('item');
+         const parent = document.getElementById('list-container');
+         parent.appendChild(li);
+         
+      })
+
+      document.getElementById('list-container').addEventListener('click', function(event){
+         event.target.parentNode.removeChild(event.target);
+      })
+   </script>
+
+</body>
+</html>

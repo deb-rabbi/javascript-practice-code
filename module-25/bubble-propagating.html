@@ -7,6 +7,62 @@
    <title>Bubble & stop propagating</title>
 </head>
 <body>
-   
+   <h2> event bubble bhai</h2>
+   <section id="section-container">
+      <ul id="list-container">
+         <li class="item">tumi je kar</li>
+         <li id="second-item" class="item">ami too tumar ai </li>
+         <li class="item">tumi ki amr </li>
+         <li class="item"> hmm ami o tumar</li>
+      </ul>
+   </section>
+   c
+   <script>
+      // // second-item
+
+      // document.getElementById('second-item').addEventListener('click', function(){
+      //    console.log('this is the second item ');
+      // });
+
+      // second-item stop propgation
+
+      document.getElementById('second-item').addEventListener('click', function(event){
+         console.log('this is the second item 01 ');
+         // event.stopPropagation();
+         event.stopImmediatePropagation();
+         
+      });
+      // second-item stopImmediatePropagation
+
+      document.getElementById('second-item').addEventListener('click', function(event){
+         console.log('this is the second item 02');
+         
+      });
+      // second-item stop propgation
+
+      document.getElementById('second-item').addEventListener('click', function(event){
+         console.log('this is the second item 03');
+         
+      });
+      document.getElementById('second-item').addEventListener('click', function(event){
+         console.log('this is the second item 04');
+         
+      });
+
+      // list-container
+      
+      document.getElementById('list-container').addEventListener('click', function(even){
+         console.log('this is the list-container ');
+         // even.stopPropagation();
+      });
+
+      //section-container
+
+      document.getElementById('section-container').addEventListener('click', function(eve){
+         console.log('this is the section-container ');
+         // eve.stopImmediatePropagation
+      });
+
+   </script>
 </body>
 </html>
