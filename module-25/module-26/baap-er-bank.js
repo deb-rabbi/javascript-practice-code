@@ -19,11 +19,6 @@ document.getElementById('login-submit').addEventListener('click', function(){
    }
 })
 
-// there we show you link-pager js 
-
-document.getElementById('deposit-btn').addEventListener('click', function(){
-   console.log('this is the deposit button')
-})
 
 
 
