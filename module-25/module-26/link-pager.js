@@ -5,14 +5,14 @@ document.getElementById('deposit-btn').addEventListener('click', function (){
    // console.log(depositAmount);
    const totalDeposit = document.getElementById('added-money');
    const oldestTotalDeposit = parseFloat(totalDeposit.innerText)
-   console.log(oldestTotalDeposit);
+   // console.log(oldestTotalDeposit);
    const balance = document.getElementById('total-balance');
    const availableBalance = parseFloat(balance.innerText)
-   console.log(availableBalance);
-
+   // console.log(availableBalance);
+   
+   
    const displayDeposit = oldestTotalDeposit + depositAmount ;
    totalDeposit.innerText = displayDeposit ;
-
    const newBalance = availableBalance + depositAmount ;
    balance.innerText = newBalance;
    depositeInput.value = '';
@@ -23,12 +23,24 @@ document.getElementById('deposit-btn').addEventListener('click', function (){
 
 
 
-// document.getElementById('withdrow-btn').addEventListener('click', function (){
-//    // console.log('this is the withdrawal button');
-//    const withdrawInput = document.getElementById('withdraw-amount');
-//    const withdrawAmount = withdrawInput.value ;
-//    console.log(withdrawAmount);
-//    const totalWithdraw = document.getElementById('withdrawal-money');
-//    totalWithdraw.innerText = withdrawAmount ;
-//    withdrawInput.value = '';
-// })
+document.getElementById('withdrow-btn').addEventListener('click', function (){
+   // console.log('this is the withdrawal button');
+   const withdrawInput = document.getElementById('withdraw-amount');
+   const withdrawAmount = parseFloat(withdrawInput.value) ;
+   // console.log(withdrawAmount);
+
+   const totalWithdraw = document.getElementById('withdrawal-money');
+   const oldestTotalWithdral = parseFloat(totalWithdraw.innerText);
+   // console.log(oldestTotalWithdral);
+   
+   const balance = document.getElementById('total-balance');
+   const availableBalance = parseFloat(balance.innerText);
+
+   const displayWithdrawal = withdrawAmount + oldestTotalWithdral ;
+   totalWithdraw.innerText = displayWithdrawal ;
+
+   const newBalance = availableBalance - withdrawAmount ;
+   balance.innerText = newBalance;
+   
+   withdrawInput.value = '';
+})
